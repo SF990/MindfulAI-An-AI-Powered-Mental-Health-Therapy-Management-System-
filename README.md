@@ -1,0 +1,2 @@
+# MindfulAI-An-AI-Powered-Mental-Health-Therapy-Management-System-
+MindfulAI is an AI-powered mental health &amp; therapy management platform. Features a React frontend, FastAPI backend, therapist booking with JSON storage, and interactive tracking. Fully equipped with ML pipeline architecture and modern B&amp;W technical system designs, built for robust, secure, and user-centric mental wellness management.
