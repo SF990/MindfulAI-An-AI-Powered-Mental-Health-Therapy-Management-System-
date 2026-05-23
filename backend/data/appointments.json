@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ea3e36ee-e03f-4a18-9bf9-ea502662265a",
+    "therapistId": 1,
+    "therapistName": "Dr. Saima Naz",
+    "userId": "test-user-123",
+    "userName": "John Doe",
+    "date": "Mon, May 25",
+    "time": "10:00 AM",
+    "mode": "online",
+    "reason": "Test booking reason",
+    "fee": 2000.0,
+    "bookedAt": "2026-05-20T16:17:30.560183",
+    "status": "pending"
+  }
+]

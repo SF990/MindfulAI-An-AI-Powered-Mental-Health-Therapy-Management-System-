@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sage: #7C9E8A;
+  --sage-light: #A8C5B5;
+  --sage-dark: #4A7060;
+  --cream: #F8F4EE;
+  --warm-white: #FDFAF6;
+  --charcoal: #2C3535;
+  --muted: #8A9499;
+  --accent: #C4855A;
+  --accent-light: #E8C4A8;
+  --gold: #D4A847;
+  --error: #C0392B;
+  --success: #27AE60;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--warm-white);
+  color: var(--charcoal);
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--sage-light);
+  border-radius: 3px;
+}
+
+.glass {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+.btn-primary {
+  background: var(--sage-dark);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  letter-spacing: 0.02em;
+}
+.btn-primary:hover {
+  background: var(--sage);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(74,112,96,0.25);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--sage-dark);
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: 2px solid var(--sage-dark);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.btn-outline:hover {
+  background: var(--sage-dark);
+  color: white;
+}
+
+input, textarea, select {
+  font-family: 'DM Sans', sans-serif;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.fade-up { animation: fadeUp 0.5s ease forwards; }
+.fade-in { animation: fadeIn 0.4s ease forwards; }

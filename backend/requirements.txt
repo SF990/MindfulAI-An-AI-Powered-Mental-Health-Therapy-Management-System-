@@ -1,0 +1,11 @@
+fastapi==0.115.0
+uvicorn==0.30.0
+pydantic==2.7.0
+
+# Optional - uncomment for real ML (more accurate than keywords)
+# transformers==4.44.0
+# torch==2.4.0
+# scikit-learn==1.5.0
+
+# Optional - for nightly retraining scheduler
+# schedule==1.2.2
